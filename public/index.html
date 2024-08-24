@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Application</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- Stiluri personalizate -->
+</head>
+<body>
+  <div class="container">
+    <h1 class="my-4 text-center">Recipe Application</h1>
+    
+    <form id="recipe-form" class="mb-4">
+      <div class="form-group">
+        <label for="name">Recipe Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Recipe Name" required />
+      </div>
+      <div class="form-group">
+        <label for="ingredients">Ingredients</label>
+        <textarea id="ingredients" class="form-control" rows="3" placeholder="Ingredients" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="instructions">Instructions</label>
+        <textarea id="instructions" class="form-control" rows="3" placeholder="Instructions" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Recipe</button>
+    </form>
+    
+    <ul id="recipe-list" class="list-group"></ul>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
